@@ -1,0 +1,35 @@
+<div data-role="view" data-title="Converter" data-layout="main" data-model="app.converter" data-show="app.converter.onShow" data-after-show="app.converter.afterShow">
+    <div id="converterModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+
+                    <label>Weight in kilograms
+                        <input data-bind="value: converterModel.fields.kgs" type="number">
+                    </label>
+
+                </li>
+                <li>
+
+                    <label>Result
+                        <input data-bind="value: converterModel.fields.result" type="text">
+                    </label>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a class="primary" data-role="button" data-bind="events: { click: converterModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_converterModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_converterModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_converter -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_converter -->
+</div>
